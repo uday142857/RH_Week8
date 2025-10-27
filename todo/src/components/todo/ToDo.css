@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+.main {
+  text-align: center;
+}
+.top {
+  margin-top: 100px;
+
+  width: 100%;
+}
+.top h1 {
+  margin: 20px;
+  font-family: monospace;
+  font-weight: 30px;
+  font-size: 35px;
+}
+.top input {
+  width: 50%;
+  height: 55px;
+  border: 3px black solid;
+  border-radius: 8px;
+  font-size: 20px;
+  padding-left: 10px;
+}
+.top input::placeholder {
+  color: gray;
+  font-size: 20px;
+  font-style: italic;
+  opacity: 1;
+}
+.top button {
+  padding: 13px 20px;
+  background-color: black;
+  color: rgb(208, 197, 197);
+  outline: none;
+  font-size: 20px;
+  border-radius: 6px;
+  margin-left: 10px;
+  cursor: pointer;
+
+}
+.list {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.litem {
+  border: 3px black solid;
+  width: 50%;
+  padding: 30px 10px;
+  border-radius: 6px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-evenly;
+  /* align-items: center; */
+  font-size: 28px;
+}
+.data {
+  width: 60%;
+  height: 100%;
+}
+.bt {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+}
+.bt button {
+  /* padding: 10px 15px; */
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+  margin: 0px 10px;
+  cursor: pointer;
+
+}
+.bt input {
+  /* width: 25px;
+  height: 25px;
+  border: 2px black solid; */
+}
+.bt input[type="checkbox"] {
+  width: 30px;
+  height: 30px;
+  accent-color: green; 
+  cursor: pointer;
+}
