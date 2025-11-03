@@ -1,7 +1,8 @@
 const express = require("express");
 const cors = require("cors");
 const { MongoClient, ObjectId } = require("mongodb");
-const Mongodb_url = "mongodb+srv://rh_week8:Rhweek@8@cluster0.jzgmqwi.mongodb.net/?appName=Cluster0";
+const Mongodb_url =
+  "mongodb+srv://rh_week8:Rhweek8@cluster0.bchfrnb.mongodb.net/?appName=Cluster0";
 const mongoclient = new MongoClient(Mongodb_url);
 
 const app = express();
