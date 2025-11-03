@@ -13,7 +13,7 @@ function ToDo() {
     getdata();
   }, []);
   const getdata = () => {
-    fetch("https://rh-week8-back.onrender.com/getdata")
+    fetch("https://rh-week8-backend-47qv.onrender.com/getdata")
       .then((res) => {
         return res.json();
       })
@@ -33,7 +33,7 @@ function ToDo() {
       //   })
       // );
 
-       fetch(`https://rh-week8-back.onrender.com/update/${editId}`, {
+       fetch(`https://rh-week8-backend-47qv.onrender.com/update/${editId}`, {
          method: "PUT",
          headers: { "Content-Type": "application/json" },
          body: JSON.stringify({message : add}),
@@ -53,7 +53,7 @@ function ToDo() {
       setEditId(null)
       setAdd("");
     } else {
-      fetch("https://rh-week8-back.onrender.com/postdata", {
+      fetch("https://rh-week8-backend-47qv.onrender.com/postdata", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({message:add})
@@ -83,7 +83,7 @@ function ToDo() {
   const removeData = (iD) => {
     // setData((prev) => prev.filter((_, i) => i !== index));
 
-    fetch(`https://rh-week8-back.onrender.com/remove/${iD}`, { method: "DELETE" })
+    fetch(`https://rh-week8-backend-47qv.onrender.com/remove/${iD}`, { method: "DELETE" })
       .then((res) => {
         return res.json();
       })
